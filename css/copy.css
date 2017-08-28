@@ -27,6 +27,16 @@ header {
     padding: 0;
     display: none;
     z-index: 100; }
+    header .sp_navi_li li {
+      list-style: none;
+      margin: 0;
+      padding: 0; }
+      header .sp_navi_li li a {
+        display: block;
+        padding: 10px 8px;
+        border-bottom: 1px solid #eee;
+        font-size: 14px;
+        text-decoration: none; }
   @media (min-width: 551px) {
     header .sp_navi {
       display: none; }
@@ -88,7 +98,7 @@ header {
   header li {
     list-style: none;
     margin: 0;
-    padding: 0; }
+    padding: 0px 8px; }
     header li a {
       display: block;
       padding: 10px 8px;
@@ -226,10 +236,12 @@ footer {
           font-size: 11px;
           font-size: 1.1rem;
           background-image: url("../images/top/foot_arroehead.png");
-          background-size: 4px 6px; } }
+          background-size: 4px 6px;
+          background-repeat: no-repeat; } }
       @media screen and (min-width: 551px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 551px) and (min-resolution: 2dppx) {
         footer .foot_navi li {
-          background-image: url("../images/top/foot_arroehead@2x.png"); } }
+          background-image: url("../images/top/foot_arroehead@2x.png");
+          background-repeat: no-repeat; } }
   @media (min-width: 551px) {
         footer .foot_navi a {
           color: white;
@@ -277,12 +289,13 @@ h1 {
     list-style-type: none;
     list-style-position: initial;
     list-style-image: initial;
-    font-size: 1.5rem; }
-  #contents #main .news_li li span {
-    color: #42b9d0;
-    display: block;
-    font-weight: bold;
-    margin-bottom: 3px; }
+    font-size: 1.5rem;
+    display: inline; }
+    #contents #main .news_li li span {
+      color: #42b9d0;
+      display: inline-block;
+      font-weight: bold;
+      margin-bottom: 3px; }
   #contents #sidebar {
     padding-bottom: 20px; }
     #contents #sidebar .pc_sidemenu h3 {
